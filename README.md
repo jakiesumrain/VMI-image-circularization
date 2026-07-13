@@ -31,7 +31,7 @@ The project works in tandem with the **FITS Viewer and VMI Analysis** Windows pr
 
 ## How It Works
 
-The circularization method implemented here is based on the approach described by **Gascooke, Gibson, and Lawrance (2017)** [\[1\]](#references).
+The circularization approach used here is inspired by the method described in **Gascooke, Gibson, and Lawrance (2017)** [\[1\]](#references), with a key simplification: the image center is **fixed by the user** via the `--center` flag based on physical judgment, rather than being determined as part of the optimisation. This is appropriate when the center is already well-known from the experimental setup.
 
 ### Distortion Model
 
