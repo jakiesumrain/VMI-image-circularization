@@ -1,0 +1,32 @@
+# FITS Viewer (distributed via GitHub Releases, not in repo)
+FITS/
+FITS_Viewer_v4.0.zip
+
+# Generated output images
+image_circularized.txt
+image_*.txt
+
+# FITS enhancement outputs
+*.FTS
+
+# Diagnostic plots
+trig_fit_plots/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environments
+.venv/
+.uv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
