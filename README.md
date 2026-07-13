@@ -31,6 +31,8 @@ The project works in tandem with the **FITS Viewer and VMI Analysis** Windows pr
 
 ## How It Works
 
+The circularization method implemented here is based on the approach described by **Gascooke, Gibson, and Lawrance (2017)** [\[1\]](#references).
+
 ### Distortion Model
 
 The script assumes the image distortion is a **radial displacement about a fixed center** — that is, every pixel is shifted inward or outward along its radial line, but not tangentially.
@@ -280,6 +282,10 @@ The reassignment map uses PCHIP interpolation and defaults to identity outside t
 | `matplotlib` | Diagnostic plots | Optional — scripts run without it |
 | `astropy` | FITS I/O | Required only for `enhance_polar_fits.py` |
 | `scikit-image` | CLAHE enhancement | Optional — for `--mode clahe` only |
+
+## References
+
+1. Gascooke, J. R., Gibson, S. T., & Lawrance, W. D. (2017). A "circularisation" method to repair deformations and determine the centre of velocity map images. *The Journal of Chemical Physics*, *147*(1), 013924. [https://doi.org/10.1063/1.4981024](https://doi.org/10.1063/1.4981024)
 
 ## License
 
