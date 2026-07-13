@@ -172,6 +172,8 @@ uv run enhance_polar_fits.py `
 
 Available enhancement modes: `ridge`, `unsharp`, `clahe`, `bandpass`, `all`. Each mode is saved as a separate `.FTS` file with the mode name appended.
 
+> **Note:** In practice, the `bandpass` mode has proven the most effective enhancement for ring detection. It applies a radial bandpass filter that isolates features at typical ring widths, making faint rings clearly visible to the FITS Viewer's fitting algorithm.
+
 ### Inspecting Extracted Data Only
 
 ```powershell
